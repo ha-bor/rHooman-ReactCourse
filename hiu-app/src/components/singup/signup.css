@@ -1,0 +1,68 @@
+.mainPage {
+    background-image: url('wallpaper.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainFrame {
+    height: 55vh;
+    width: 30vw;
+    background-image: url('../../tr.png');
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 2%;
+    box-shadow: 5px 5px 5px gray;
+
+}
+.welText {
+    text-align: center;
+    font-size: 3vh;
+}
+.inputArea {
+    padding-top: 25px;
+    margin: 5px 20px;
+    border-top: 1px black solid;
+    justify-content: space-between;
+    flex-direction: column;
+    align-self: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 25px;
+}
+.inputBox {
+    font-size: 2vw;
+    background-color: white;
+    text-align: center;
+    margin: 10px 0px;
+    border-radius: 5%;
+    padding: 10px 20px;
+    opacity: 0.6 ;
+}
+.inputBox:hover {
+    opacity: 1.0;
+}
+.sub{
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 10px;
+}
+.subBut {
+    background-color: orangered;
+    font-size: 35px;
+    opacity: 0.9;
+}
+.subBut:hover {
+    opacity: 1;
+    background-color: orange;
+}
+.error {
+    color: red
+}
+.lll {
+    align-self: center;
+}

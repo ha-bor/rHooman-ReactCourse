@@ -1,0 +1,116 @@
+.mainscrn {
+    background-image: url('../../wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+}
+.messList {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+    background-color: white;
+    opacity: 0.8;
+}
+.chatScrn {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+    justify-content: space-between;
+    opacity: 0.8;
+}
+.chatBar {
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    align-items: center;    
+    margin-left: 5px;
+    opacity: 0.8;
+}
+.chatBar:hover {
+    opacity: 1;
+}
+.textBox {
+    flex-grow: 3;
+}
+.profPic {
+    display: flex;
+    flex-grow: 1;
+}
+.upperSec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.lowerSec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.topBar {
+    display: flex;
+    flex-grow: 1;
+    background-color: white;
+    opacity: 0.8;
+}
+.mainBar {
+    flex-grow: 10;
+}
+.lowerBar {
+    display: flex;
+    flex-grow: 1;
+    background-color: white;
+    justify-content: space-between;
+    align-items: stretch;
+    opacity: 0.8;
+}
+.sendbut {
+    width: 60px;
+    flex-grow: 1;
+}
+.inputChat {
+    width: 100%;
+    font-size: 200%;
+    background-color: orange;
+    flex-grow: 10
+}
+#nS {
+    color: black;
+    border: 2px solid red
+}
+.topText {
+    margin: 10px;
+    font-size: 150%
+}
+.ssss {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    border-bottom: 1px solid black;
+}
+#sbar {
+    font-size: 20px;
+    padding: 0 10px;
+}
+#plus {
+    font-size: 40px;
+}
+.searched {
+    display: flex;
+    border-bottom: 1px solid black;
+    justify-content: center;
+}
+#profComp {
+    background-color: orange;
+    font-size: 24px;
+    border-radius: 10px;
+    opacity: 1;
+}
+#profComp:hover {
+    opacity: 0.6;
+}

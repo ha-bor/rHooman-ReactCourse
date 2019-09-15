@@ -7,9 +7,21 @@ export default class Header extends React.Component {
 //   }
 
   render () {
+    console.log(this.props)
     return (
       <div className='topBar'>
-        <span className='topText'>{this.props.userName}</span>
+        <div className='cred'>
+            <div className='credT'>
+              <span> {this.props.userFName} </span>
+              <span> {this.props.userLName} </span>
+            </div>
+            <div className='credB'>
+              <span> {this.props.userEmail} </span>
+            </div>
+        </div>
+        <div className='profBox'>
+          <img src={this.props.userPic} alt='' />
+        </div>
       </div>
     )
   }

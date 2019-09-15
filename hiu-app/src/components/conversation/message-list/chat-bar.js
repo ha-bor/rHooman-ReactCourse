@@ -4,17 +4,28 @@ import { getUserName } from '../../../Actions/conversaion'
 export default class ChatBar extends React.Component {
 
   render () {
-    console.log('here')
+    const profilePic = this.props.prof
+    let firstName = String(this.props.name)
+    let lastName = String(this.props.lastName)
+    if ( firstName == 'null' ) {
+      firstName = 'First Name'
+    }
+    if ( lastName == 'null' ) {
+      lastName = 'Last Name'
+    }
+    console.log(this.props)
+    console.log( firstName, lastName)
     return (
-      <div className='chatBar' onClick={() => this.props.dispatch(getUserName(this.props.name + ' ' + this.props.lastName, this.props.messageId))}>
+      <div className='chatBar' onClick={() => this.props.dispatch(getUserName(firstName, lastName, this.props.email, this.props.messageId))}>
         <div className='profPic'>
-          <img src={this.props.prof} alt=' ' width='10px' height='10px' />
+          <img src={profilePic} alt=' ' width='10px' height='10px' />
         </div>
         <div className='textBox'>
           <div className='upperSec'>
             <div className='nameLname'>
-              <span className='namee'> {this.props.name }</span>
-              <span className='namee'> {this.props.lastName}</span>
+              <span className='namee'> {firstName }</span>
+              <span className='namee'> {lastName}</span>
+              <p className='namee'> {this.props.email} </p>
             </div>
             <div className='date'>
               <span id='datee'> sat 13:51 </span>

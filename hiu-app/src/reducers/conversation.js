@@ -34,8 +34,11 @@ const conversation = (state = initial, action) => {
     case 'SAVE_USER_NAME':
       return {
         ...state,
-        name: action.payload.name,
-        idnum: action.payload.idd
+        firstname: action.payload.fName,
+        idnum: action.payload.idd,
+        lastname: action.payload.lName,
+        useremail: action.payload.email,
+        userpic: action.payload.profPic
       }
     case 'SAVE_MESSAGE':
       return {text1: action.payload,

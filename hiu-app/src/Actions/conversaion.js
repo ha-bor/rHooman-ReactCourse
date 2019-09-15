@@ -1,6 +1,6 @@
-export const getUserName = (name, idnum) => ({
+export const getUserName = (firstName, lastName, email, idnum, profile) => ({
   type: 'SAVE_USER_NAME',
-  payload: {name: name, idd: idnum}
+  payload: {fName: firstName, idd: idnum, lName: lastName, email:email, profPic: profile}
 })
 
 export const getMessage = (message) => ({

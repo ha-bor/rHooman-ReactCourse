@@ -20,7 +20,6 @@ export default class Chatscrn extends React.Component {
   componentDidMount () {
     const ftoken = new FormData()
     ftoken.append('token', this.state.token)
-    console.log(ftoken)
     axios.get('https://api.paywith.click/conversation/', { params: {
       token: this.state.token
     } })
@@ -57,7 +56,7 @@ export default class Chatscrn extends React.Component {
     fmc.append('user_id', uid)
     axios.post('https://api.paywith.click/conversation/', fmc)
       .then((response) => {
-        console.log(response)
+        console.log('makeConv', response)
       })
       .catch(function (error) {
         console.log(error)
@@ -89,12 +88,13 @@ export default class Chatscrn extends React.Component {
                 if (itemm.id != this.state.id) {
                   return (
                     <ChatBarContainer key={index}
-                      name={itemm.email}
-                      lastName={itemm.lastName}
+                      name={itemm.first_name}
+                      lastName={itemm.last_name}
                       lastM={item.lastest_messages}
                       notSeen={item.unSeen}
-                      prof={item.profPic} 
-                      messageId={item.id} />
+                      prof={item.avatar_url} 
+                      messageId={item.id} 
+                      email={itemm.email} />
                   )
                 }
               })

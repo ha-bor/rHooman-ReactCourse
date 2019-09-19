@@ -15,7 +15,7 @@ export default class Pm extends React.Component {
   getConversation () {
     console.log('id person',this.props.idPerson)
     const fmes = new FormData()
-    fmes.append('size', 5)
+    fmes.append('size', 35)
     fmes.append('date', ((new Date().getTime() / 1000).toFixed(0)))
     fmes.append('conversation_id', this.props.idPerson)
     fmes.append('token', this.state.token)
@@ -54,6 +54,7 @@ export default class Pm extends React.Component {
         <button className='aaaa' onClick={() => this.getConversation()}> refresh </button>
         <div className='main'>
           {this.state.messageList.map((message, index) => {
+            console.log(message)
             // console.log('senderId',message.sender.id)
             // console.log('myId: ', this.state.id)
             if (message.sender.id == this.state.id) {
